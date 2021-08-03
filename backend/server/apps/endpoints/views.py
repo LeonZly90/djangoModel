@@ -2,21 +2,21 @@ from rest_framework import viewsets
 from rest_framework import mixins
 from rest_framework.exceptions import APIException
 
-from backend.server.apps.endpoints.models import Endpoint
-from backend.server.apps.endpoints.serializers import EndpointSerializer
+from apps.endpoints.models import Endpoint
+from apps.endpoints.serializers import EndpointSerializer
 
-from backend.server.apps.endpoints.models import MLAlgorithm
-from backend.server.apps.endpoints.serializers import MLAlgorithmSerializer
+from apps.endpoints.models import MLAlgorithm
+from apps.endpoints.serializers import MLAlgorithmSerializer
 
-from backend.server.apps.endpoints.models import MLAlgorithmStatus
-from backend.server.apps.endpoints.serializers import MLAlgorithmStatusSerializer
+from apps.endpoints.models import MLAlgorithmStatus
+from apps.endpoints.serializers import MLAlgorithmStatusSerializer
 
-from backend.server.apps.endpoints.models import MLRequest
-from backend.server.apps.endpoints.serializers import MLRequestSerializer
+from apps.endpoints.models import MLRequest
+from apps.endpoints.serializers import MLRequestSerializer
 
 from django.db import transaction
-from backend.server.apps.endpoints.models import ABTest
-from backend.server.apps.endpoints.serializers import ABTestSerializer
+from apps.endpoints.models import ABTest
+from apps.endpoints.serializers import ABTestSerializer
 
 import json
 from numpy.random import rand

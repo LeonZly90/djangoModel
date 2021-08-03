@@ -11,11 +11,11 @@ The MLAlgorithmSerializer is more complex than others. It has one filed current_
 the latest status from MLAlgorithmStatus.
 '''
 from rest_framework import serializers
-from backend.server.apps.endpoints.models import Endpoint
-from backend.server.apps.endpoints.models import MLAlgorithm
-from backend.server.apps.endpoints.models import MLAlgorithmStatus
-from backend.server.apps.endpoints.models import MLRequest
-from backend.server.apps.endpoints.models import ABTest
+from apps.endpoints.models import Endpoint
+from apps.endpoints.models import MLAlgorithm
+from apps.endpoints.models import MLAlgorithmStatus
+from apps.endpoints.models import MLRequest
+from apps.endpoints.models import ABTest
 
 class EndpointSerializer(serializers.ModelSerializer):
     class Meta:
