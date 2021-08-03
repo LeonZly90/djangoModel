@@ -1,12 +1,12 @@
 import joblib
 import pandas as pd
 
-class RandomForestClassifier:
+class ExtraTreesClassifier:
     def __init__(self):
         path_to_artifacts = "../../research/"
-        self.values_fill_missing = joblib.load(path_to_artifacts + "train_mode.joblib")
+        self.values_fill_missing =  joblib.load(path_to_artifacts + "train_mode.joblib")
         self.encoders = joblib.load(path_to_artifacts + "encoders.joblib")
-        self.model = joblib.load(path_to_artifacts + "random_forest.joblib")
+        self.model = joblib.load(path_to_artifacts + "extra_trees.joblib")
 
     def preprocessing(self, input_data):
         # JSON to pandas DataFrame
